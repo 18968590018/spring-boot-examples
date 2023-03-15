@@ -28,7 +28,6 @@ public class UploadController {
         if (file.isEmpty()) {
             redirectAttributes.addFlashAttribute("message", "Please select a file to upload");
             return "redirect:uploadStatus";
-        }
 
         try {
             // Get the file and save it somewhere
